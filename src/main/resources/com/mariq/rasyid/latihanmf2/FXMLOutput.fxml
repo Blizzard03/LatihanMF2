@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="285.0" prefWidth="604.0" style="-fx-background-color: magenta;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mariq.rasyid.latihanmf2.FXMLOutputController">
+   <children>
+      <Label layoutX="14.0" layoutY="29.0" text="Nama Penyewa">
+         <font>
+            <Font name="Dubai Medium" size="14.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="64.0" text="Jadwal">
+         <font>
+            <Font name="Dubai Medium" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="99.0" text="Jumlah Jam">
+         <font>
+            <Font name="Dubai Medium" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="134.0" text="Jam Pertama">
+         <font>
+            <Font name="Dubai Medium" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="169.0" text="Bayar">
+         <font>
+            <Font name="Dubai Medium" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="332.0" layoutY="195.0" text="------------ +">
+         <font>
+            <Font name="Dubai Medium" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="239.0" text="Total">
+         <font>
+            <Font name="Dubai Medium" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="120.0" layoutY="29.0" text=":">
+         <font>
+            <Font name="Dubai Medium" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="120.0" layoutY="64.0" text=":">
+         <font>
+            <Font name="Dubai Medium" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="120.0" layoutY="99.0" text=":">
+         <font>
+            <Font name="Dubai Medium" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="120.0" layoutY="134.0" text=":">
+         <font>
+            <Font name="Dubai Medium" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="120.0" layoutY="169.0" text=":">
+         <font>
+            <Font name="Dubai Medium" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="120.0" layoutY="239.0" text=":">
+         <font>
+            <Font name="Dubai Medium" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="name_customer" layoutX="134.0" layoutY="30.0" text="Label">
+         <font>
+            <Font name="Dubai Medium" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="schejule_name" layoutX="134.0" layoutY="64.0" text="Label">
+         <font>
+            <Font name="Dubai Medium" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="hours" layoutX="134.0" layoutY="99.0" text="Label">
+         <font>
+            <Font name="Dubai Medium" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="188.0" layoutY="99.0" text="Jam">
+         <font>
+            <Font name="Dubai Medium" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="firsthoursprice" layoutX="134.0" layoutY="134.0" text="Label">
+         <font>
+            <Font name="Dubai Medium" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="sumcal" layoutX="134.0" layoutY="169.0" text="Label">
+         <font>
+            <Font name="Dubai Medium" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="219.0" layoutY="169.0" text="X">
+         <font>
+            <Font name="Dubai Medium" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="timeleft" layoutX="233.0" layoutY="169.0" text="Label">
+         <font>
+            <Font name="Dubai Medium" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="318.0" layoutY="169.0" text="=">
+         <font>
+            <Font name="Dubai Medium" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="allcal" layoutX="332.0" layoutY="169.0" text="Label">
+         <font>
+            <Font name="Dubai Medium" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalprice" layoutX="332.0" layoutY="239.0" text="Label">
+         <font>
+            <Font name="Dubai Medium" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutY="287.0" prefHeight="0.0" prefWidth="599.0" style="-fx-background-color: gold;" />
+      <Label layoutX="272.0" layoutY="2.0" text="INVOICE">
+         <font>
+            <Font name="Dubai Medium" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="closebtn" layoutX="576.0" layoutY="-1.0" mnemonicParsing="false" onAction="#closebtn" style="-fx-background-color: RED; -fx-cursor: hand;" text="X" textFill="WHITE">
+         <font>
+            <Font name="Constantia Bold" size="14.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.46">
+               <bumpInput>
+                  <BoxBlur>
+                     <input>
+                        <Glow />
+                     </input>
+                  </BoxBlur>
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="btnback" layoutX="550.0" layoutY="-1.0" mnemonicParsing="false" onAction="#backclick" style="-fx-background-color: cyan; -fx-cursor: hand;" text="&lt;" textFill="WHITE">
+         <font>
+            <Font name="Constantia Bold" size="14.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.46">
+               <bumpInput>
+                  <BoxBlur>
+                     <input>
+                        <Glow />
+                     </input>
+                  </BoxBlur>
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
